@@ -16,7 +16,7 @@ public class main {
     public String create_file_name;
     
     abstract public String getFile(String create_fileNAME);
-    abstract public void create();
+    abstract public void create(String write_data_to_file);
   }
   // This will be where we override the values
   public void getSetup(String file_,String informationToInput) {
