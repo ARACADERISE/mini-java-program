@@ -10,7 +10,7 @@ import java.util.Formatter;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class main {
+public class Main {
   // We will override this
   abstract static class set {
     public String create_file_name;
@@ -43,14 +43,17 @@ public class main {
     setup.getFile(file_);
     setup.create(informationToInput);
     Collections.sort(saved_data);
+    System.out.println(saved_data);
   }
   
   // I didn't wanna make another file so I made this mini project in one file :)
   public static void main(String[] args) {
     Scanner fileNAME = new Scanner(System.in);
     // Gets filename to create. HAS TO BE .txt
+    System.out.print("File name >> ");
     String file_ = fileNAME.nextLine();
     // Gets the .txt data(what the text will be)
+    System.out.print("Data >> ");
     String file_data = fileNAME.nextLine();
     // Calling the function that will create and write into the file
     getSetup(file_, file_data);
