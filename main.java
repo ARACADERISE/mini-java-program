@@ -47,7 +47,11 @@ public class main {
   // I didn't wanna make another file so I made this mini project in one file :)
   public static void main(String[] args) {
     Scanner fileNAME = new Scanner(System.in);
+    // Gets filename to create. HAS TO BE .txt
     String file_ = fileNAME.nextLine();
-    getSetup run = new getSetup(file_,"Hey. I am Aidan. A Java, C#, Python, Sql and C developer");
+    // Gets the .txt data(what the text will be)
+    String file_data = fileNAME.nextLine();
+    // Calling the function that will create and write into the fil
+    getSetup run = new getSetup(file_,file_data);
   }
 }
