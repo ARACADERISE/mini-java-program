@@ -30,6 +30,7 @@ public class main {
       }
       @Override
       public void create(String write_data_to_file) {
+        saved_data.add(write_data_to_file);
         try {
           Formatter cFile = new Formatter(this.create_file_name);
           cFile.format("%s",write_data_to_file);
