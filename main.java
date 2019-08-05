@@ -1,3 +1,10 @@
+/*
+  * NOTE: Please contact me if you see a error in this.
+  * I typed this in the ide I am using to learn Java and tried to
+  * typed it raw without having a compiler
+  * so if you would be a good citizen and tell me if there is a mistake I would be more than happy :)
+*/
+
 import java.util.ArrayList;
 import java.util.Formatter;
 import java.util.Collections;
