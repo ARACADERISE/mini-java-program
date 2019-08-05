@@ -60,6 +60,7 @@ public class signal {
         if(sig == signal_types.a01) {
           signalset.getSignal("a01");
           signalset.withSignalSend(file,"\nSENT_WITH_SIGNAL_a01_WITHSTANDING_TYPE_TEXT");
+          Collections.sort(data);
         }
         break;
       case "send":
@@ -68,6 +69,7 @@ public class signal {
         if(sig2 == signal_types.send) {
           signalset.getSignal("send");
           signalset.withSignalSend(file,"\nSENT_WITH_SIGNAL_send_WITHSTANDING_TYPE_send\n"+"DATA_WITH_SEND_REQUEST\n"+send_data);
+          Collections.sort(data);
         }
         break;
       case "recieve":
@@ -76,6 +78,7 @@ public class signal {
         if(sig3 == signal_types.recieve) {
           signalset.getSignal("recieve");
           signalset.withSignalSend(file, "\nSENT_WITH_SIGNAL_recieve_WITHSTANDING_TYPE_recieve\n"+"DATA_WITH_RECIEVE_REQUEST\n"+"Recieve_From_\n--->"+file);
+          Collections.sort(data);
         }
         break;
     }
