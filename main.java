@@ -51,7 +51,7 @@ public class main {
     String file_ = fileNAME.nextLine();
     // Gets the .txt data(what the text will be)
     String file_data = fileNAME.nextLine();
-    // Calling the function that will create and write into the fil
+    // Calling the function that will create and write into the file
     getSetup run = new getSetup(file_,file_data);
   }
 }
