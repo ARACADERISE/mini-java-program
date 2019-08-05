@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Formatter;
 import java.util.Collections;
 import java.util.Scanner;
+import signal.signal;
 
 public class Main {
   // We will override this
@@ -55,6 +56,11 @@ public class Main {
     // Gets the .txt data(what the text will be)
     System.out.print("Data >> ");
     String file_data = fileNAME.nextLine();
+    // Adding into the file
+    System.out.print("Signal >> ");
+    String SIGNAL = fileNAME.nextLine();
+    signal setSignal = new signal();
+    setSignal.stateSignals(SIGNAL,file_data,file_);
     // Calling the function that will create and write into the file
     getSetup(file_, file_data);
   }
