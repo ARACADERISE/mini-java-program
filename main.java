@@ -12,14 +12,14 @@ import java.util.Scanner;
 
 public class main {
   // We will override this
-  abstract class set {
+  abstract static class set {
     public String create_file_name;
     
     abstract public String getFile(String create_fileNAME);
     abstract public void create(String write_data_to_file);
   }
   // This will be where we override the values
-  public void getSetup(String file_,String informationToInput) {
+  public static void getSetup(String file_,String informationToInput) {
     ArrayList<String> saved_data = new ArrayList<String>();
     set setup = new set() {
       @Override
@@ -33,13 +33,13 @@ public class main {
         try {
           Formatter cFile = new Formatter(this.create_file_name);
           cFile.format("%s",write_data_to_file);
-          cFile.close()
+          cFile.close();
         } catch (Exception e) {
           System.out.println(e); 
         }
       }
     };
-    setup.getFile(fileNAME);
+    setup.getFile(file_);
     setup.create(informationToInput);
     Collections.sort(saved_data);
   }
@@ -52,6 +52,6 @@ public class main {
     // Gets the .txt data(what the text will be)
     String file_data = fileNAME.nextLine();
     // Calling the function that will create and write into the file
-    getSetup run = new getSetup(file_,file_data);
+    getSetup(file_, file_data);
   }
 }
